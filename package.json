@@ -1,0 +1,18 @@
+{
+  "name": "backend-file",
+  "version": "1.0.0",
+  "description": "my first backend application",
+  "main": "index.js",
+  "scripts": {
+    "dev":"nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Abhimanyu Prajapati",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

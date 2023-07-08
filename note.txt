@@ -1,0 +1,32 @@
+1. check the version (node -v +  e)   e =enter
+2. type npm init + e
+3. enter all details on that
+4. create a file index.js
+5. type console .log("whatever")
+6. to see the output type 
+7. type on terminal
+8. node filename   eg (node index.js)
+9. it will show the out put
+
+
+nodemon =  is the npm package that rerun the application 
+also we have to change the script in package.json
+add dev= nodemon index.js
+
+in terminal type npm run dev
+
+---------------------------------------------------------
+
+node modules 
+
+1. OS module (operating System)
+2. FS module (File System)
+3. Event module (not related to the Dom )
+    this is costum events
+    in events there are two parts are 
+    i. emit the event
+    ii. listen the event
+
+4. HTTP module
+
+
