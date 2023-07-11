@@ -286,6 +286,7 @@ const server=(request,response)=>{
  change the name (name should have unique)
  and what we have to publice write the name on (main) what we to publice
  regiter in npm 
+ npm login
  after that on terminal type npm publish
  done
 */
