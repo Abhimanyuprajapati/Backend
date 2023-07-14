@@ -340,9 +340,59 @@ app.listen(port,()=>{
 });
 
 */
+
+/*
 const express = require('express');
 const app = express() 
+app.get('/',(req,res)=>{
+    const user={
+        name:"abhimanyu",
+        sirname:"prajapati",
+        student_id:52,
+        rollno:52
+    };
+    res.json(user);
+});
+app.get('/user',(req,res)=>{
+    const user={
+        name:"abhimanyu",
+        sirname:"prajapati",
+        student_id:52,
+        rollno:52,
+        std:"5th",
+    };
+    res.json(user);
+});
+app.post('/user',(req,res)=>{
+    const user={
+        name:"abhimanyu",
+        sirname:"prajapati",
+        student_id:52,
+        rollno:52,
+        std:"5th",
+    };
+    res.json(user);
+});
+app.put('/user',(req,res)=>{
+   const update={
+    success: "true",
+    send:"succesfully updated the method",
+   }
+    res.json(update); 
+});
+app.delete('/user',(req,res)=>{
+    const deleteer={
+     success: "true",
+     send:"succesfully deleted the method",
+    }
+     res.json(deleteer); 
+ });
 const port=8081;
 app.listen(port,()=>{
-console.log("local host is running successful",port);
+console.log("local host is running successful on",port);
 })
+
+*/
+
+
+
