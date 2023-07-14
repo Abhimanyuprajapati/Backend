@@ -1,20 +1,20 @@
-const os = require("node:os");   // why we write require ? : this is also called common javascript import 
-const fs = require("node:fs");
-const { error } = require("node:console");
-const event = require("node:events");
-const http = require("node:http");
+// const os = require("node:os");   // why we write require ? : this is also called common javascript import 
+// const fs = require("node:fs");
+// const { error } = require("node:console");
+// const event = require("node:events");
+// const http = require("node:http");
 
-// const functions = require("./modul.js"); module was not publish  
+// const functions = require("./modul.js"); //module was not publish  
 
-// after publish the module
-const functions = require("abhimanyunpm");
+// // after publish the module
+// // const functions = require("abhimanyunpm");
 
 
-const sum=functions.add(5,7);
-console.log(sum);
+// const sum=functions.add(5,7);
+// console.log(sum);
 
-const difference = functions.sub(7,2);
-console.log(difference);
+// const difference = functions.sub(7,2);
+// console.log(difference);
 
 // import os from "node:os"  // this is called ESM(esamscript) import
 
@@ -291,3 +291,58 @@ const server=(request,response)=>{
  done
 */
 
+
+//   ----------------------- Express js ------------------------------------------
+
+/*
+const express = require('express');
+const app = express()    // by writing this we use in node  (http.createServer)
+
+app.get('/',(req,res)=>{
+    res.send("this is the express server and running up");
+})
+
+app.get('/user',(req,res)=>{
+    const user={
+        name:"akash",
+        rollno:52,
+        student:52163
+    };
+    res.json(user);
+});
+app.get('/todos',(req,res)=>{
+    const todo={
+        name:"akash",
+        rollno:52,
+        student:52163,
+        status :false,
+        income:152586,
+        work:"karaam chairii"
+    };
+    res.json(todo);
+});
+
+app.post('/list',(req,res)=>{
+    const list={
+        name:"akash",
+        rollno:52,
+        student:52163,
+        status :false,
+        income:152586,
+        work:"karaam chairii",
+        family:"helping hands"
+    };
+    res.json(list);
+});
+const port=8081;
+app.listen(port,()=>{
+    console.log("server is up and running on port",port);
+});
+
+*/
+const express = require('express');
+const app = express() 
+const port=8081;
+app.listen(port,()=>{
+console.log("local host is running successful",port);
+})
