@@ -62,8 +62,10 @@ app.get('/product/:productId',(req,res)=>{
 
    const producter=products.find((item)=>item.id==productId );
    
-    if(producter){
+    if(producter){ 
         res.json(producter);
+    } else{
+        res.status(404).json({"message": "Product not found"});
     }
 });
 
